@@ -4,7 +4,7 @@
 A bash script to convert all your video/image files from a folder, 
 into the most efficient way to compress them.
 
-![Image Unavailabe](https://i.imgur.com/1eTZQ3H.png)
+![Image Unavailabe](https://raw.githubusercontent.com/MissingPotato/UltimateCompressor/master/preview.png)
 
 ## Known Bugs
 Right now the compressor can't read the files that have spaces in them, 

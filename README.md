@@ -37,19 +37,13 @@ for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
 - [x] jpg -> Webp Images
 - [x] mp4 -> mp4 compression
 - [x] flv -> mp4 compression
-<<<<<<< HEAD
 - [x] mov -> mp4 compression
-=======
->>>>>>> 502ae1aa3f37c8af8ddd7af9e26c50028b7cd1b2
 - [ ] Detect if png or webp is smaller
 - [ ] Custom quallity parameters ( for each format )
 - [ ] Parameters to Only convert certain images and video files
 - [ ] Learn how to use github
 - [ ] Automatically install dependencies
-<<<<<<< HEAD
 - [ ] Allow nesting
-=======
->>>>>>> 502ae1aa3f37c8af8ddd7af9e26c50028b7cd1b2
 
 
 ## Dependencies

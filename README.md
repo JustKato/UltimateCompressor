@@ -53,7 +53,7 @@ for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
 
 
 ## Examples
-```
+```bash
 ./ultimateCompressor.sh -i ~/Pictures/memes/ -o ~/Pictures/memes_compressed -q 30
 
 ./ultimateCompressor.sh -i ~/Pictures/memes/ -o ~/Pictures/memes_compressed -q 0

@@ -29,8 +29,10 @@ if [ ! -d $input_dir ]; then
     exit;
 fi
 
+# Tell the user we are reading files
 echo "Reading files from $input_dir and exporting to $output_dir";
 
+# Check for the output directory, see if you can 
 if [ ! -d $output_dir ]; then 
     printf "${COLOR_RED}Output directory missing, creating...\n";
     mkdir -p "$output_dir";
@@ -67,6 +69,14 @@ done
 
 files=$(ls "$input_dir" | grep "[fF][lL][vV]";);
 echo "Processing FLV";
+for filename in $files; do
+    filename=$(basename "$filename");
+    nohup ffmpeg -i "$(readlink -f $input_dir)"/"$filename" "$output_dir"/"$filename".mp4 > /dev/null 2>&1;
+    printf "${COLOR_GREEN}Succesfully converted $filename\n";
+done
+
+files=$(ls "$input_dir" | grep "[mM][oO][vV]";);
+echo "Processing MOV";
 for filename in $files; do
     filename=$(basename "$filename");
     nohup ffmpeg -i "$(readlink -f $input_dir)"/"$filename" "$output_dir"/"$filename".mp4 > /dev/null 2>&1;

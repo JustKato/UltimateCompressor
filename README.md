@@ -19,6 +19,7 @@ into the most efficient way to compress them.
 - jpg
 - flv
 - mp4
+- mov
 
 
 ## Tested On
@@ -31,11 +32,13 @@ into the most efficient way to compress them.
 - [x] jpg -> Webp Images
 - [x] mp4 -> mp4 compression
 - [x] flv -> mp4 compression
-- [] Detect if png or webp is smaller
-- [] Custom quallity parameters ( for each format )
-- [] Parameters to Only convert certain images and video files
-- [] Learn how to use github
-- [] Automatically install dependencies
+- [x] mov -> mp4 compression
+- [ ] Detect if png or webp is smaller
+- [ ] Custom quallity parameters ( for each format )
+- [ ] Parameters to Only convert certain images and video files
+- [ ] Learn how to use github
+- [ ] Automatically install dependencies
+- [ ] Allow nesting
 
 
 ## Dependencies

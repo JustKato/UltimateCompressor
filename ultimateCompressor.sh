@@ -36,6 +36,9 @@ if [ ! -d $output_dir ]; then
     mkdir -p "$output_dir";
 fi
 
+
+# These 3 for loops need to be replaced with a function,
+# I have no clue how to do that, and/or how to optimize.
 files=$(ls "$input_dir" | grep "[jJ][pP][gG]";);
 echo "Processing JPG";
 for filename in $files; do

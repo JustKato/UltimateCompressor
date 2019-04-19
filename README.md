@@ -21,7 +21,9 @@ for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
 ```
 #### Defaults
 `-i` - "./"
+
 `-o` - "./"
+
 `-q` - "40"
 
 

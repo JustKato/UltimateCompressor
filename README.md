@@ -19,6 +19,11 @@ for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
 -o  output, takes a directory
 -q  quallity, it's only for the webp right now ( higher = better | 0 - 100 )
 ```
+#### Defaults
+`-i` - "./"
+`-o` - "./"
+`-q` - "40"
+
 
 
 ## Supported file types
@@ -55,9 +60,9 @@ for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
 
 ## Examples
 ```bash
-./ultimateCompressor.sh -i ~/Pictures/memes/ -o ~/Pictures/memes_compressed -q 30
+./ultimateCompressor.sh -i ~/Pictures/memes/ -o ~/Pictures/memes_compressed -q 30  # This is bellow average
 
-./ultimateCompressor.sh -i ~/Pictures/memes/ -o ~/Pictures/memes_compressed -q 0
+./ultimateCompressor.sh -i ~/Pictures/memes/ -o ~/Pictures/memes_compressed -q 0  # It's not going to look too good....
 ```
 
 #### Author Notes

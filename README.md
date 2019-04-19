@@ -6,14 +6,14 @@ into the most efficient way to compress them.
 
 
 
-##Parameters
+## Parameters
 ```
 -i  input, takes a directory
 -o  output, takes a directory
 -q  quallity, it's only for the webp right now ( higher = better )
 ```
 
-##Supported file types
+## Supported file types
 
 - png
 - jpg
@@ -21,12 +21,12 @@ into the most efficient way to compress them.
 - mp4
 
 
-##Tested On
+## Tested On
 
 - Ubuntu 19.04
 
 
-##To-Do
+## To-Do
 
 - [x] png -> Webp Images
 - [x] jpg -> Webp Images
@@ -37,7 +37,7 @@ into the most efficient way to compress them.
 - [ ] Parameters to Only convert certain images and video files
 - [ ] Learn how to use github
 
-##Examples
+## Examples
 
 ```
 ./ultimateCompressor.sh -i ~/Pictures/memes/ -o ~/Pictures/memes_compressed -q 30

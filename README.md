@@ -4,7 +4,12 @@
 A bash script to convert all your video/image files from a folder, 
 into the most efficient way to compress them.
 
-
+## Known Bugs
+Right now the compressor can't read the files that have spaces in them, 
+I suggest you run this command in the folder with your files
+```bash
+for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
+```
 
 ## Parameters
 ```

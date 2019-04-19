@@ -17,8 +17,9 @@ for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
 ```
 -i  input, takes a directory
 -o  output, takes a directory
--q  quallity, it's only for the webp right now ( higher = better )
+-q  quallity, it's only for the webp right now ( higher = better | 0 - 100 )
 ```
+
 
 ## Supported file types
 

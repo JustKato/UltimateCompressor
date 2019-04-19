@@ -4,7 +4,12 @@
 A bash script to convert all your video/image files from a folder, 
 into the most efficient way to compress them.
 
-
+## Known Bugs
+Right now the compressor can't read the files that have spaces in them, 
+I suggest you run this command in the folder with your files
+```bash
+for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
+```
 
 ## Parameters
 ```
@@ -32,13 +37,19 @@ into the most efficient way to compress them.
 - [x] jpg -> Webp Images
 - [x] mp4 -> mp4 compression
 - [x] flv -> mp4 compression
+<<<<<<< HEAD
 - [x] mov -> mp4 compression
+=======
+>>>>>>> 502ae1aa3f37c8af8ddd7af9e26c50028b7cd1b2
 - [ ] Detect if png or webp is smaller
 - [ ] Custom quallity parameters ( for each format )
 - [ ] Parameters to Only convert certain images and video files
 - [ ] Learn how to use github
 - [ ] Automatically install dependencies
+<<<<<<< HEAD
 - [ ] Allow nesting
+=======
+>>>>>>> 502ae1aa3f37c8af8ddd7af9e26c50028b7cd1b2
 
 
 ## Dependencies

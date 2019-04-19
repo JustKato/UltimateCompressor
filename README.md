@@ -27,7 +27,6 @@ into the most efficient way to compress them.
 
 
 ## To-Do
-
 - [x] png -> Webp Images
 - [x] jpg -> Webp Images
 - [x] mp4 -> mp4 compression
@@ -36,11 +35,20 @@ into the most efficient way to compress them.
 - [ ] Custom quallity parameters ( for each format )
 - [ ] Parameters to Only convert certain images and video files
 - [ ] Learn how to use github
+- [ ] Automatically install dependencies
+
+
+## Dependencies
+- [webp project(cwebp)](https://www.webmproject.org/)
+
 
 ## Examples
-
 ```
 ./ultimateCompressor.sh -i ~/Pictures/memes/ -o ~/Pictures/memes_compressed -q 30
 
 ./ultimateCompressor.sh -i ~/Pictures/memes/ -o ~/Pictures/memes_compressed -q 0
 ```
+
+#### Author Notes
+
+This is one of my first public github projects, if you have any suggestions please don't shy to help me out.

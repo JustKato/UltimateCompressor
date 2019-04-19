@@ -49,7 +49,7 @@ for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
 
 
 ## Dependencies
-- [webp project(cwebp)](https://www.webmproject.org/)
+- [webp project(cwebp)](https://developers.google.com/speed/webp/download)
 
 
 ## Examples

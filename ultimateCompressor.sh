@@ -68,9 +68,8 @@ for filename in $files; do
 done
 
 
-files=$(ls "$input_dir" | grep "[pP][nN][gG]";);
 printf "\n${COLOR_BLUE}Processing PNG files...${COLOR_GREEN}";
-for filename in $files; do
+ls "$input_dir" | grep "[pP][nN][gG]" | while read filename; do
     filename=$(basename "$filename");
     nohup cwebp "$(readlink -f $input_dir)"/"$filename" -q "$quallity" -o "$output_dir"/"$filename".webp > /dev/null 2>&1;
     if [ "$v" == "1" ]; then
@@ -78,10 +77,9 @@ for filename in $files; do
     fi
 done
 
-#
-files=$(ls "$input_dir" | grep "[mM][pP]4";);
-printf "\n${COLOR_BLUE}Processing MP4 files...${COLOR_GREEN}";
-for filename in $files; do
+
+printf "\n${COLOR_BLUE}Processing PNG files...${COLOR_GREEN}";
+ls "$input_dir" | grep "[mM][pP]4" | while read filename; do
     filename=$(basename "$filename");
     nohup ffmpeg -i "$(readlink -f $input_dir)"/"$filename" "$output_dir"/"$filename".mp4 > /dev/null 2>&1;
     if [ "$v" == "1" ]; then
@@ -89,9 +87,8 @@ for filename in $files; do
     fi
 done
 
-files=$(ls "$input_dir" | grep "[fF][lL][vV]";);
-printf "\n${COLOR_BLUE}Processing FLV files...${COLOR_GREEN}";
-for filename in $files; do
+printf "\n${COLOR_BLUE}Processing PNG files...${COLOR_GREEN}";
+ls "$input_dir" | grep "[fF][lL][vV]" | while read filename; do
     filename=$(basename "$filename");
     nohup ffmpeg -i "$(readlink -f $input_dir)"/"$filename" "$output_dir"/"$filename".mp4 > /dev/null 2>&1;
     if [ "$v" == "1" ]; then
@@ -99,9 +96,8 @@ for filename in $files; do
     fi
 done
 
-files=$(ls "$input_dir" | grep "[mM][oO][vV]";);
-printf "\n${COLOR_BLUE}Processing MOV files...${COLOR_GREEN}";
-for filename in $files; do
+printf "\n${COLOR_BLUE}Processing PNG files...${COLOR_GREEN}";
+ls "$input_dir" | grep "[mM][oO][vV]" | while read filename; do
     filename=$(basename "$filename");
     nohup ffmpeg -i "$(readlink -f $input_dir)"/"$filename" "$output_dir"/"$filename".mp4 > /dev/null 2>&1;
     if [ "$v" == "1" ]; then

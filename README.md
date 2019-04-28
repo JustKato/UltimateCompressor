@@ -59,7 +59,8 @@ for f in *; do mv "$f" `echo $f | tr ' ' '_'`; done
 
 
 ## Dependencies
-- [webp project(cwebp)](https://developers.google.com/speed/webp/download)
+- [webp project(cwebp)](https://developers.google.com/speed/webp/download) `sudo apt install ffmpeg`
+- [ffmpeg](https://ffmpeg.org) `sudo apt install ffmpeg`
 
 
 ## Examples
